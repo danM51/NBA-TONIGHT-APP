@@ -1,0 +1,582 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --primaryColor: #C54E4E;
+  --secondaryColor:#0B0500;
+  --thirdColor:#FFBD00;
+  --accentColor: #FFFFFF;
+}
+
+body {
+  min-width: 375px;
+  height: auto;
+  background-color: var(--primaryColor);
+  background-image: url(/CSS/images/5e5362a27488c217864c784d_peep-standing-20.svg);
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position-y: 65vh;
+  background-position-x: 10vw;
+}
+body nav {
+  background-color: unset;
+  border: solid white 1px;
+  width: 50px;
+  height: 50px;
+  margin-left: 85%;
+  position: fixed;
+  font-size: 0rem;
+  opacity: 0.3;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 50;
+  transition: all 0.8s;
+}
+body nav a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+}
+body nav a:hover {
+  color: var(--secondaryColor);
+  transition: all 0.5s;
+}
+body nav:hover {
+  background-color: white;
+  color: #C54E4E;
+  font-weight: 500;
+  width: 100vw;
+  height: 10%;
+  opacity: 1;
+  margin-left: unset;
+  font-size: 1rem;
+  border-radius: 20px 20px 20px 20px;
+  transition: all 0.6s;
+}
+body .mainTop {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .mainTop .firstMainContent {
+  height: 489px;
+  width: 341px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+body .mainTop .firstMainContent .logoHeadingMobile {
+  width: 290px;
+  animation: fadeIn 3s alternate 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  0% {
+    width: 50px;
+    opacity: 0;
+  }
+}
+body .mainTop .firstMainContent h2 {
+  color: var(--accentColor);
+  font-size: 1rem;
+  letter-spacing: 4px;
+}
+body .mainTop .firstMainContent .seperationBar {
+  width: 185px;
+  height: 5px;
+  background-color: var(--accentColor);
+  animation: extend 2s alternate 1;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+@keyframes extend {
+  0% {
+    width: 100vw;
+    opacity: 0;
+  }
+}
+body .mainTop .firstMainContent .viewStatsBtn {
+  color: var(--accentColor);
+  background-color: unset;
+  border: solid 1px var(--accentColor);
+  letter-spacing: 2px;
+  width: 40vw;
+  height: 40px;
+  border-radius: 5px;
+}
+body .mainTop .firstMainContent .viewStatsBtn:hover {
+  background-color: var(--accentColor);
+  color: black;
+  letter-spacing: 3px;
+}
+body .mainContent {
+  background-color: var(--secondaryColor);
+  width: 100%;
+  height: auto;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .mainContent .thePlayer {
+  width: 110px;
+  height: auto;
+  background-color: var(--primaryColor);
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+body .mainContent .thePlayer .playerName {
+  font-size: 1rem;
+}
+body .mainContent .thePlayer .playerTagSeperationLine {
+  width: 73px;
+  height: 2px;
+  background-color: var(--accentColor);
+}
+body .mainContent .thePlayer .playerNumber {
+  font-size: 1rem;
+  color: var(--thirdColor);
+}
+body .mainContent .thePlayer .playerTeam {
+  font-size: 0.7rem;
+  color: var(--thirdColor);
+  text-align: center;
+}
+body .mainContent .singleStatsSection {
+  width: 99%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .mainContent .singleStatsSection h1 {
+  color: var(--accentColor);
+  margin-bottom: 1rem;
+}
+body .mainContent .singleStatsSection .sortPlayerSection {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body .mainContent .singleStatsSection .sortPlayerSection .playerSortLabel {
+  color: var(--accentColor);
+}
+body .mainContent .singleStatsSection .sortPlayerSection .playerSort {
+  height: 25px;
+  width: 100%;
+  border-radius: 10px;
+  padding-left: 1rem;
+  border: none;
+}
+body .mainContent .singleStatsSection .allPlayerInfo {
+  width: 90%;
+  height: 700px;
+  border-radius: 5px;
+  border: solid rgba(255, 255, 255, 0.497) 0.2px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats {
+  width: 90%;
+  height: 142px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats .thePlayer {
+  width: 110px;
+  height: 110px;
+  background-color: var(--primaryColor);
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats .thePlayer .playerName {
+  font-size: 1rem;
+}
+body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats .thePlayer .playerTagSeperationLine {
+  width: 73px;
+  height: 2px;
+  background-color: var(--accentColor);
+}
+body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats .thePlayer .playerNumber {
+  font-size: 1rem;
+  color: var(--thirdColor);
+}
+body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats .thePlayer .playerTeam {
+  font-size: 0.7rem;
+  color: var(--thirdColor);
+}
+body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats .thePlayerBackStrip {
+  border: solid white 1.5px;
+  width: 103px;
+  height: 103px;
+  margin-top: 15px;
+  margin-right: 120px;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.8s;
+}
+body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats .thePlayerBackStrip:hover {
+  margin-top: 20px;
+  transition: all 0.5s;
+}
+body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats .playerStats li {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0.5rem 0rem;
+  list-style: none;
+  color: var(--thirdColor);
+}
+body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats .playerStats span {
+  color: var(--accentColor);
+  font-weight: unset;
+}
+body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats .playerStats h3 {
+  color: var(--thirdColor);
+}
+body .mainContent .singleStatsSection .allPlayerInfo .playerSeparation {
+  width: 200px;
+  height: 26px;
+  background-image: url(/CSS/images/playerSeperation.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .mainContent .singleStatsSection .allPlayerInfo .graphicalRepresentationOfPlayerStats {
+  width: 85%;
+  height: auto;
+  text-align: center;
+}
+body .mainContent .playerMoreInfo {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-left: solid white 0.5rem;
+  width: 90%;
+  height: 85px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  border-radius: 5px;
+  overflow-x: scroll;
+  transition: all 0.8s;
+}
+body .mainContent .playerMoreInfo .info {
+  background-color: var(--secondaryColor);
+  width: 70px;
+  height: 50px;
+  color: var(--accentColor);
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.5rem;
+}
+body .mainContent .playerMoreInfo .info:hover {
+  background-color: var(--primaryColor);
+  transition: all 0.8s;
+  cursor: pointer;
+}
+body .mainContent .playerMoreInfo:hover {
+  background-color: var(--accentColor);
+  transition: all 0.8s;
+}
+body .mainContent .comparisonOfPlayers {
+  width: 90%;
+  height: 780px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .mainContent .comparisonOfPlayers h1 {
+  color: var(--accentColor);
+  margin: 1rem;
+}
+body .mainContent .comparisonOfPlayers .comparison {
+  width: 95%;
+  height: auto;
+  border: solid rgba(255, 255, 255, 0.497) 0.2px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0rem;
+  gap: 2rem;
+}
+body .mainContent .comparisonOfPlayers .comparison .comparisonSorts {
+  width: 315px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body .mainContent .comparisonOfPlayers .comparison .comparisonSorts label {
+  color: var(--accentColor);
+}
+body .mainContent .comparisonOfPlayers .comparison .comparisonSorts input {
+  width: 60%;
+  height: 21px;
+  border-radius: 2px;
+  padding-left: 1rem;
+  border: none;
+}
+body .mainContent .comparisonOfPlayers .comparison hr {
+  width: 60%;
+}
+body .mainContent .comparisonOfPlayers .comparison .bothPlayersInfo {
+  width: 315px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body .mainContent .comparisonOfPlayers .playerSeparation {
+  width: 200px;
+  height: 26px;
+  background-image: url(/CSS/images/playerSeperation.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1rem 0rem;
+}
+body .mainContent .comparisonOfPlayers .graphsContainer {
+  width: 95%;
+  height: auto;
+}
+body .mainContent .comparisonOfPlayers .graphsContainer .barChartOfPlayersStats {
+  width: 100%;
+  height: 148px;
+  text-align: center;
+  background-image: url(/CSS/images/comparisonBarChartImage.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body .mainContent .comparisonOfPlayers .graphsContainer .lineGraphOfPlayerStats {
+  width: 100%;
+  height: 148px;
+  text-align: center;
+  background-image: url(/CSS/images/lineGraphOfPlayerStats.svg);
+  margin-top: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body .mainContent .footer {
+  width: 100%;
+  height: 126px;
+  background-color: var(--primaryColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+body .mainContent .footer h5 {
+  margin: 1rem;
+}
+body .mainContent .footer .socialsContainer {
+  height: 100px;
+  width: 100px;
+  border-top: solid var(--accentColor) 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+body .mainContent .footer .socialsContainer .gitHub {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+body .mainContent .footer .socialsContainer .portfolio {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background-color: #FFBD00;
+  }
+  body nav {
+    width: 100%;
+    height: 20px;
+    margin-left: unset;
+    font-size: 1rem;
+    background-color: black;
+    background-image: url(/CSS/images/logoNavBar.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    border: solid black 1px;
+    border-radius: 0 0 10px 10px;
+  }
+  body .mainTop .firstMainContent {
+    flex-direction: column;
+    gap: 10rem;
+  }
+  body .mainTop .firstMainContent .logoHeadingMobile {
+    width: 910px;
+    height: 356px;
+  }
+  body .mainTop .firstMainContent .container1 {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  body .mainContent {
+    background-color: var(--accentColor);
+  }
+  body .mainContent .singleStatsSection .statHeading {
+    color: rgba(11, 5, 0, 0.2862745098);
+  }
+  body .mainContent .singleStatsSection .sortPlayerSection {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  body .mainContent .singleStatsSection .sortPlayerSection h1 {
+    color: rgba(11, 5, 0, 0.2862745098);
+  }
+  body .mainContent .singleStatsSection .sortPlayerSection .playerSortLabel {
+    color: rgba(11, 5, 0, 0.2862745098);
+  }
+  body .mainContent .singleStatsSection .sortPlayerSection .playerSort {
+    width: 10%;
+    border: solid var(--thirdColor) 1px;
+  }
+  body .mainContent .singleStatsSection .allPlayerInfo {
+    height: 400px;
+    background-color: rgba(11, 5, 0, 0.2862745098);
+    flex-direction: row;
+    transition: all 1s;
+  }
+  body .mainContent .singleStatsSection .allPlayerInfo .playerSeparation {
+    transform: rotate(-90deg);
+    width: 300px;
+  }
+  body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats {
+    height: auto;
+  }
+  body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats .thePlayer {
+    width: 210px;
+    height: 210px;
+    transition: all 0.8s;
+    gap: 1rem;
+  }
+  body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats .thePlayer .playerName {
+    font-size: 1.5rem;
+  }
+  body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats .thePlayer .playerTeam {
+    font-size: 1rem;
+  }
+  body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats .thePlayer:hover {
+    transform: rotate(-20deg);
+    transition: all 0.5s;
+    background-image: url(/CSS/images/lebron-james-los-angeles-lakers.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(2px);
+  }
+  body .mainContent .singleStatsSection .allPlayerInfo .thePlayerAndTheStats .thePlayerBackStrip {
+    display: none;
+  }
+  body .mainContent .allPlayerInfo:hover {
+    background-color: var(--secondaryColor);
+    transition: all 0.5s;
+  }
+  body .mainContent .playerMoreInfo {
+    width: 30%;
+    padding: 0 1rem;
+    border-top: solid rgba(11, 5, 0, 0.2862745098) 1px;
+    border-bottom: solid rgba(11, 5, 0, 0.2862745098) 1px;
+    border-radius: unset;
+    background-color: unset;
+  }
+  body .mainContent .playerMoreInfo:hover {
+    background-color: var(--secondaryColor);
+  }
+  body .mainContent .comparisonOfPlayers h1 {
+    color: rgba(11, 5, 0, 0.2862745098);
+  }
+  body .mainContent .comparisonOfPlayers .comparison {
+    background-color: rgba(11, 5, 0, 0.2862745098);
+    transition: all 1s;
+    flex-direction: row;
+  }
+  body .mainContent .comparisonOfPlayers .comparison hr {
+    transform: rotate(-60deg);
+    width: 10%;
+  }
+  body .mainContent .comparisonOfPlayers .comparison:hover {
+    background-color: var(--secondaryColor);
+    transition: all 0.5s;
+  }
+  body .mainContent .comparisonOfPlayers .playerSeparation {
+    display: none;
+  }
+  body .mainContent .comparisonOfPlayers .graphsContainer {
+    width: 95%;
+    height: 290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #0B0500;
+    margin-top: 2rem;
+  }
+  body .mainContent .comparisonOfPlayers .graphsContainer .barChartOfPlayersStats {
+    height: 267px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .mainContent .comparisonOfPlayers .graphsContainer .lineGraphOfPlayerStats {
+    margin-top: unset;
+    height: 267px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .mainContent .footer {
+    flex-direction: row;
+  }
+  body .mainContent .footer .socialsContainer {
+    height: 100px;
+    width: 100px;
+    border-top: unset;
+    border-left: solid var(--accentColor) 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

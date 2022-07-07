@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA TONIGHT!</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <nav>
+        <a href="#stats">stats</a>
+        <a href="#comparison">compare</a>
+    </nav>
+    <!-- get icon and put into the nav above -->
+    <main class="mainTop">
+        <section class="firstMainContent">
+            <img class="logoHeadingMobile" src="./CSS/images/logoHeadingMobile.svg" alt="yellow basketball logo of Nba Tonight">
+            <div class="container1">
+                <h2>compare player performances</h2>
+                <div class="seperationBar"></div>
+                <button class="viewStatsBtn">view stats</button>
+            </div>
+        </section>
+    </main>
+    <!-- end of first page -->
+
+    <!-- main content -->
+<main id="stats" class="mainContent"> 
+
+    <section class="singleStatsSection">
+        <h1 class="statHeading">STATS</h1>
+
+        <div class="sortPlayerSection">
+            <label class="playerSortLabel" for="playerSort">find player</label>
+            <input  type="text" list="playersSort" id="playerSort" class="playerSort" placeholder="look for a player...">
+            <datalist id="playersSort">
+                <option value="LeBron James">
+                <option value="James Harden">
+            </datalist>
+        </div>
+
+        <div class="allPlayerInfo">
+
+            <div class="thePlayerAndTheStats">
+                <div class="thePlayer">
+                    <h1 class="playerName"> <span id="playerFname">PLAYER</span><br><span style="text-align:center;" id="playerLname">NAME</span> </span></h1>
+                        <div class="playerTagSeperationLine"></div>
+                    <h2 class="playerNumber"><span id="playerPosition">pos</span></h2>
+
+                    <h2 class="playerTeam"><span id="playerTeam">team</span></h2>
+                </div>
+                <div class="thePlayerBackStrip"></div>
+
+
+                <div class="playerStats">
+                    <ul>
+                        <li>PTS: <span id="pts">40</span></li>
+                        <li>REB: <span id="reb">11</span></li>
+                        <li>FG%: <span id="fg%">30.2</span></li>
+                        <li>3P%: <span id="3p%">25.5</span></li>
+                        <li>FT%: <span id="ft%">66.7</span></li>
+                    </ul>
+                    <h3>min:<span id="minPlayed"> 0</span></h3>
+                </div>
+            </div>
+            <div class="playerSeparation"><!-- separation bar  --></div>
+            <div class="graphicalRepresentationOfPlayerStats">
+                <!-- <h1 class="barChartOfStats"> GRAPHICAL CHART HERE</h1> -->
+                <canvas id="myChart" width="400" height="250"> </canvas>
+            </div>
+        </div>
+    </section>
+    <section class="playerMoreInfo">
+        <div class="info">Next Game</div>
+        <div class="info">Next Game</div>
+        <div class="info">Next Game</div>
+        <div class="info">Next Game</div>
+        <div class="info">Next Game</div>
+        <div class="info">Next Game</div>
+    </section>
+
+
+    <section class="comparisonOfPlayers" id="comparison">
+        <h1>comparison</h1>
+        <div class="comparison">
+            <div class="comparisonSorts">
+                <label for="playerSort1">1st player</label>
+                <input type="text" list="playersSort1" id="playerSort1" class="playerSort1" placeholder="the first player">
+                <datalist id="playersSort1">
+                    <option value="Lebron James">
+                    <option value="James Harden">
+                </datalist>
+            </div>
+            
+            <div class="comparisonSorts">
+                <label for="playerSort2">2nd player</label>
+                <input type="text" list="playersSort2" id="playerSort2" class="playerSort2" placeholder="the first player">
+                <datalist id="playersSort2">
+                    <option value="Lebron James"></option>
+                    <option value="James Harden"></option>
+                </datalist>
+            </div>
+            <hr>
+            <div class="bothPlayersInfo">
+                <div class="thePlayer">
+                    <h1 class="playerName"> <span id="player1FName">LEBRON</span><br><span id="player1LName">JAMES</span></h1>
+                    <div class="playerTagSeperationLine"></div>
+                    <h2 class="playerNumber"> <span id="player1Position">p</span></h2>
+                    
+                    <h2 class="playerTeam"> <span id="player1Team">team</span></h2>
+                </div>
+                <h1>VS</h1>
+                <div class="thePlayer">
+                    <h1 class="playerName"> <span id="player2FName">JAMES</span><br><span id="player2LName">HARDEN</span></h1>
+                    <div class="playerTagSeperationLine"></div>
+                    <h2 class="playerNumber"> <span id="player2Position">p</span></h2>
+                    
+                    <h2 class="playerTeam"> <span id="player2Team">team</span></h2>
+                </div>
+
+            </div>
+        </div>
+        <div class="playerSeparation"></div>
+        <div class="graphsContainer">
+            <div class="barChartOfPlayersStats"></div>
+            <div class="lineGraphOfPlayerStats"></div>
+        </div>
+    </section>
+
+    <footer style="color: white;" class="footer">
+        <h5>website designed and developed by Daniel Msangi</h5>
+        <div class="socialsContainer">
+            <div class="gitHub"></div>
+            <div class="portfolio"></div>
+        </div>
+
+    </footer>
+    </main>
+<script src="./app.mjs" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 277 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-681.143,-4431.92)">
+        <g transform="matrix(0.259749,0,0,1.37339,627.81,2489.95)">
+            <g id="lineGraphOfPlayerStats">
+                <g transform="matrix(2.5438,0,0,0.481107,-4777.57,990.594)">
+                    <text x="2070.81px" y="1076.38px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:15px;fill:rgb(255,186,0);">REB</text>
+                </g>
+                <g transform="matrix(2.5438,0,0,0.481107,-4984.22,990.67)">
+                    <text x="2070.81px" y="1076.38px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:15px;fill:rgb(255,186,0);">PT<tspan x="2089.91px " y="1076.38px ">S</tspan></text>
+                </g>
+                <g transform="matrix(2.5438,0,0,0.481107,-4566.74,990.319)">
+                    <text x="2070.81px" y="1076.38px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:15px;fill:rgb(255,186,0);">FG%</text>
+                </g>
+                <g transform="matrix(2.5438,0,0,0.481107,-4372.84,990.501)">
+                    <text x="2070.81px" y="1076.38px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:15px;fill:rgb(255,186,0);">3P%</text>
+                </g>
+                <g transform="matrix(2.5438,0,0,0.481107,-4178.69,990.72)">
+                    <text x="2070.81px" y="1076.38px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:15px;fill:rgb(255,186,0);">F<tspan x="2079.16px " y="1076.38px ">T</tspan>%</text>
+                </g>
+                <g transform="matrix(2.5438,0,0,0.481107,-6089.23,917.55)">
+                    <path d="M2497.44,1040.46L2497.44,1200.89L2892.02,1200.89" style="fill:none;stroke:white;stroke-width:3.03px;"/>
+                </g>
+                <g transform="matrix(1.86303,0,0,0.352354,-4334.63,652.099)">
+                    <path d="M2468.23,2393.07L2494.89,2292.02L2589.53,2357.85L2699.37,2317.5L2814.33,2324.5L2903.21,2260.26" style="fill:none;stroke:white;stroke-width:1.55px;"/>
+                </g>
+                <g transform="matrix(2.5438,0,0,0.481107,-6079.19,912.093)">
+                    <text x="2470.24px" y="1199.31px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:10px;fill:white;">10</text>
+                </g>
+                <g transform="matrix(2.5438,0,0,0.481107,-6079.19,884.703)">
+                    <text x="2470.24px" y="1199.31px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:10px;fill:white;">40</text>
+                </g>
+                <g transform="matrix(2.5438,0,0,0.481107,-6079.19,855.121)">
+                    <text x="2470.24px" y="1199.31px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:10px;fill:white;">80</text>
+                </g>
+                <g transform="matrix(2.5438,0,0,0.481107,-6079.19,896.982)">
+                    <text x="2470.24px" y="1199.31px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:10px;fill:white;">20</text>
+                </g>
+                <g transform="matrix(2.5438,0,0,0.481107,-6079.19,869.593)">
+                    <text x="2470.24px" y="1199.31px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:10px;fill:white;">60</text>
+                </g>
+                <g transform="matrix(2.5438,0,0,0.481107,-6079.19,843.431)">
+                    <text x="2470.24px" y="1199.31px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:10px;fill:white;">100</text>
+                </g>
+                <g transform="matrix(1.86303,0,0,0.352354,-3113.35,594.768)">
+                    <text x="2129.16px" y="2334.43px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:13.072px;fill:rgb(213,67,73);">H<tspan x="2138.45px " y="2334.43px ">A</tspan>RDEN</text>
+                </g>
+                <g transform="matrix(1.86303,0,0,0.352354,-3289.68,594.768)">
+                    <text x="2129.16px" y="2334.43px" style="font-family:'Roboto-Black', 'Roboto';font-weight:900;font-size:13.072px;fill:white;">J<tspan x="2136.36px " y="2334.43px ">A</tspan>MES</text>
+                </g>
+                <g transform="matrix(2.02348,0,0,0.402528,-4735.09,536.646)">
+                    <ellipse cx="2495.4" cy="2293.51" rx="1.8" ry="1.741" style="fill:white;"/>
+                </g>
+                <g transform="matrix(2.02348,0,0,0.402528,-4559.54,559.787)">
+                    <ellipse cx="2495.4" cy="2293.51" rx="1.8" ry="1.741" style="fill:white;"/>
+                </g>
+                <g transform="matrix(2.02348,0,0,0.402528,-4355.1,545.523)">
+                    <ellipse cx="2495.4" cy="2293.51" rx="1.8" ry="1.741" style="fill:white;"/>
+                </g>
+                <g transform="matrix(2.02348,0,0,0.402528,-4141.83,547.848)">
+                    <ellipse cx="2495.4" cy="2293.51" rx="1.8" ry="1.741" style="fill:white;"/>
+                </g>
+                <g transform="matrix(2.02348,0,0,0.402528,-3975.12,525.256)">
+                    <ellipse cx="2495.4" cy="2293.51" rx="1.8" ry="1.741" style="fill:white;"/>
+                </g>
+                <g transform="matrix(1.86303,0,0,0.352354,-4334.63,652.099)">
+                    <path d="M2468.23,2393.07L2494.89,2292.02L2589.53,2357.85L2699.37,2317.5L2814.33,2324.5L2903.21,2260.26" style="fill:none;stroke:white;stroke-width:1.55px;"/>
+                </g>
+                <g transform="matrix(1.86303,0,0,0.352354,-4331.26,652.737)">
+                    <path d="M2465.91,2392.81L2494.19,2319.96L2589.94,2348.31L2701.09,2347.2L2814.33,2290.29L2903.21,2221.03" style="fill:none;stroke:rgb(213,67,73);stroke-width:1.55px;"/>
+                </g>
+                <g transform="matrix(2.02348,0,0,0.402528,-4735.09,536.646)">
+                    <ellipse cx="2495.4" cy="2293.51" rx="1.8" ry="1.741" style="fill:white;"/>
+                </g>
+                <g transform="matrix(2.02348,0,0,0.402528,-4733.45,546.815)">
+                    <ellipse cx="2495.4" cy="2293.51" rx="1.8" ry="1.741" style="fill:rgb(255,186,0);"/>
+                </g>
+                <g transform="matrix(2.02348,0,0,0.402528,-4559.54,559.787)">
+                    <ellipse cx="2495.4" cy="2293.51" rx="1.8" ry="1.741" style="fill:white;"/>
+                </g>
+                <g transform="matrix(2.02348,0,0,0.402528,-4556.57,556.971)">
+                    <ellipse cx="2495.4" cy="2293.51" rx="1.8" ry="1.741" style="fill:rgb(255,186,0);"/>
+                </g>
+                <g transform="matrix(2.02348,0,0,0.402528,-4355.1,545.523)">
+                    <ellipse cx="2495.4" cy="2293.51" rx="1.8" ry="1.741" style="fill:white;"/>
+                </g>
+                <g transform="matrix(2.02348,0,0,0.402528,-4347.99,556.543)">
+                    <ellipse cx="2495.4" cy="2293.51" rx="1.8" ry="1.741" style="fill:rgb(255,186,0);"/>
+                </g>
+                <g transform="matrix(2.02348,0,0,0.402528,-4141.83,547.848)">
+                    <ellipse cx="2495.4" cy="2293.51" rx="1.8" ry="1.741" style="fill:white;"/>
+                </g>
+                <g transform="matrix(2.02348,0,0,0.402528,-4138.46,536.514)">
+                    <ellipse cx="2495.4" cy="2293.51" rx="1.8" ry="1.741" style="fill:rgb(255,186,0);"/>
+                </g>
+                <g transform="matrix(2.02348,0,0,0.402528,-3975.12,525.256)">
+                    <ellipse cx="2495.4" cy="2293.51" rx="1.8" ry="1.741" style="fill:white;"/>
+                </g>
+                <g transform="matrix(2.02348,0,0,0.402528,-3971.75,511.899)">
+                    <ellipse cx="2495.4" cy="2293.51" rx="1.8" ry="1.741" style="fill:rgb(255,186,0);"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

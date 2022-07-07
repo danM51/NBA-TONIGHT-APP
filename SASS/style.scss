@@ -1,0 +1,712 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --primaryColor: #C54E4E;
+    --secondaryColor:#0B0500;
+    --thirdColor:#FFBD00;
+    --accentColor: #FFFFFF;
+}
+
+body{
+    // width: 100vw;
+    min-width: 375px;
+    height: auto;
+    background-color: var(--primaryColor);
+    background-image: url(/CSS/images/5e5362a27488c217864c784d_peep-standing-20.svg);
+   
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position-y: 65vh;
+    background-position-x: 10vw;
+
+nav{
+    background-color: unset;
+    border: solid white 1px;
+    width: 50px;
+    height: 50px;
+    margin-left: 85%;
+    position: fixed;
+    // padding: 2rem;
+    font-size: 0rem;
+    opacity: 0.3;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 50;
+    a{
+        text-decoration: none;
+        color: black;
+        transition: all 0.5s;
+    }
+    a:hover{
+        color: var(--secondaryColor);
+        transition: all 0.5s;
+    }
+    transition: all 0.8s;
+}
+nav:hover{
+    background-color: white;
+    color: #C54E4E;
+    font-weight: 500;
+    width: 100vw;
+    height: 10%;
+    opacity: 1;
+    margin-left: unset;
+    font-size: 1rem;
+    border-radius: 20px 20px 20px 20px;
+    transition: all 0.6s;
+}
+.mainTop{
+    // position: relative;
+    // z-index: 3;
+    width: 100%;
+    height: 100vh;
+    // background-image: url(/CSS/images/alex-perez-ioJBsYQ-pPM-unsplash.jpg);
+    // background-repeat: no-repeat;
+    // background-size: 104%;
+    // background-position-y: 101%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // content on the first page
+    .firstMainContent{
+        height: 489px;
+        width: 341px;
+        // border: solid yellow 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+
+
+        .logoHeadingMobile{
+            width: 290px;
+            animation: fadeIn 3s alternate 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeIn {
+        0%{
+            width: 50px;
+            opacity: 0;
+        }            
+        }
+        h2{
+            color: var(--accentColor);
+            font-size: 1rem;
+            letter-spacing: 4px;
+        }
+        .seperationBar{
+            width: 185px;
+            height: 5px;
+            background-color: var(--accentColor);
+            animation: extend 2s alternate 1;
+            animation-fill-mode: both;
+            animation-delay: 1s;
+        }
+        @keyframes extend {
+            0%{
+                width: 100vw;
+                opacity: 0;
+            }
+           
+        }
+        .viewStatsBtn{
+            color: var(--accentColor);
+            background-color: unset;
+            border: solid 1px var(--accentColor);
+            letter-spacing: 2px;
+            width: 40vw;
+            height: 40px;
+            border-radius: 5px;
+            // transition: all 0.8s;
+        }
+        .viewStatsBtn:hover{
+            background-color: var(--accentColor);
+            color: black;
+            letter-spacing: 3px;
+            // transition: all 1s;
+        }
+    }
+}
+
+.mainContent{
+    background-color: var(--secondaryColor);
+    // background-image: url(/CSS/images/alex-perez-ioJBsYQ-pPM-unsplash.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // background-attachment: fixed;
+    width: 100%;
+    height:auto;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // global player card styles
+    .thePlayer {
+            width: 110px;
+            height: auto;
+            background-color: var(--primaryColor);
+            padding: 0.5rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+    
+            .playerName {
+                font-size: 1rem;
+    
+                // background-color: black;
+            }
+    
+            .playerTagSeperationLine {
+                width: 73px;
+                height: 2px;
+                background-color: var(--accentColor);
+            }
+    
+            .playerNumber {
+                font-size: 1rem;
+                color: var(--thirdColor);
+    
+            }
+    
+            .playerTeam {
+                font-size: 0.7rem;
+                // margin-top: 0.5rem;
+                color: var(--thirdColor);
+                text-align: center;
+            }
+        }
+    // global player card styles END
+
+
+    .singleStatsSection{
+        // background-color: #C54E4E;
+        width: 99%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            color: var(--accentColor);
+            margin-bottom: 1rem;
+        }
+        .sortPlayerSection{
+            width: 90%;
+            height: auto;
+            // border: solid white 1px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .playerSortLabel{
+                color: var(--accentColor);
+            }
+            .playerSort{
+                height: 25px;
+                width: 100%;
+                border-radius: 10px;
+                padding-left: 1rem;
+                border: none;
+            }
+
+        }
+// single player stats
+        .allPlayerInfo{
+            width: 90%;
+            height: 700px;
+            // background-color: ;
+            border-radius: 5px;
+            border: solid rgba(255, 255, 255, 0.497) 0.2px;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            .thePlayerAndTheStats{
+                // border: solid yellow 1px;
+                width: 90%;
+                height: 142px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                .thePlayer{
+                    width: 110px;
+                    height: 110px;
+                    background-color: var(--primaryColor);
+                    padding: 0.5rem 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+                    z-index: 2;
+
+                    .playerName{
+                        font-size: 1rem;
+                        // background-color: black;
+                    }
+                    .playerTagSeperationLine{
+                        width: 73px;
+                        height: 2px;
+                        background-color: var(--accentColor);
+                    }
+                    .playerNumber{
+                        font-size: 1rem;
+                        color: var(--thirdColor);
+                    }
+                    .playerTeam{
+                        font-size: 0.7rem;
+                        // margin-top: 0.5rem;
+                        color: var(--thirdColor);
+                    }
+                }
+                .thePlayerBackStrip{
+                    border: solid white 1.5px;
+                    width: 103px;
+                    height: 103px;
+                    margin-top: 15px;
+                    margin-right: 120px;
+                    position: absolute;
+                    z-index: 1;
+                    transition: all 0.8s;
+                }
+                .thePlayerBackStrip:hover{
+                    margin-top: 20px;
+                    transition: all 0.5s;
+
+                }
+
+                .playerStats{
+                    li{
+                        font-size: 1rem;
+                        font-weight: 700;
+                        margin: 0.5rem 0rem;
+                        list-style: none;
+                        color: var(--thirdColor);
+                    }
+                    span{
+                        color: var(--accentColor);
+                        font-weight: unset;
+                    }
+                    h3{
+                        color: var(--thirdColor);
+                    }
+                }
+                
+            }
+
+            .playerSeparation{
+                width: 200px;
+                height: 26px;
+                background-image: url(/CSS/images/playerSeperation.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+
+            }
+
+            .graphicalRepresentationOfPlayerStats{
+                width: 85%;
+                height: auto;
+                // border: solid white 1px;
+                text-align: center;
+                // background-image: url(/CSS/images/chartImage.svg);
+                // background-position: center;
+                // background-repeat: no-repeat;
+            }
+        }
+// single player stats End
+    }
+    .playerMoreInfo{
+        background-color: rgba(0, 0, 0, 0.65);
+        border-left: solid white 0.5rem;
+        width: 90%;
+        height: 85px;
+        display: flex;
+        flex-direction: row;
+        // justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        border-radius: 05px;
+        overflow-x: scroll;
+        transition: all 0.8s;
+
+        .info{
+            background-color: var(--secondaryColor);
+            width: 70px;
+            height: 50px;
+            color: var(--accentColor);
+            border-radius: 05px;
+            text-align: center;
+            padding: 0.5rem;
+        }
+        .info:hover{
+            background-color: var(--primaryColor);
+            transition: all 0.8s;
+            cursor: pointer;
+        }
+    }
+    .playerMoreInfo:hover{
+        background-color: var(--accentColor);
+        transition: all 0.8s;
+    }
+
+    .comparisonOfPlayers{
+        // border: solid white 1px;
+        width: 90%;
+        height: 780px;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1{
+            color: var(--accentColor);
+            margin: 1rem;
+        }
+
+
+        .comparison{
+            width: 95%;
+            height: auto;
+            // background-color: rgba(0, 0, 0, 0.65);
+            border: solid rgba(255, 255, 255, 0.497) 0.2px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            padding: 1rem 0rem;
+            gap: 2rem;
+           
+            .comparisonSorts{
+                // background-color: #C54E4E;
+                width: 315px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+            label {
+                color: var(--accentColor);
+            }
+            input{
+                width: 60%;
+                height: 21px;
+                border-radius: 2px;
+                padding-left: 1rem;
+                border: none;
+            }
+            }
+            hr{
+                width:60%;
+            }
+            .bothPlayersInfo{
+                // background-color: #FFBD00;
+                width: 315px;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        .playerSeparation {
+            width: 200px;
+            height: 26px;
+            background-image: url(/CSS/images/playerSeperation.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 1rem 0rem;
+        }
+        .graphsContainer{
+            width: 95%;
+            height: auto;
+            .barChartOfPlayersStats{
+                width: 100%;
+                height: 148px;
+                // border: solid white 1px;
+                text-align: center;
+                background-image: url(/CSS/images/comparisonBarChartImage.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                // opacity: 0.5;
+            }
+            .lineGraphOfPlayerStats{
+                width: 100%;
+                    height: 148px;
+                    // border: solid white 1px;
+                    text-align: center;
+                    background-image: url(/CSS/images/lineGraphOfPlayerStats.svg);
+                    margin-top: 2rem;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    // opacity: 0.5;
+            }
+        }
+
+
+    }
+    .footer {
+        width: 100%;
+        height: 126px;
+        background-color: var(--primaryColor);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        h5{
+            margin: 1rem;
+        }
+
+        .socialsContainer{
+            height: 100px;
+            width: 100px;
+            border-top: solid var(--accentColor) 1px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+
+            .gitHub{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: white;
+            }
+            .portfolio{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: white;
+            }
+        }
+    }
+}
+
+}
+@media screen and (min-width:700px ) {
+    
+    body{
+        background-color: #FFBD00;
+
+        nav{
+            width: 100%;
+            height: 20px;
+            margin-left: unset;
+            font-size: 1rem;
+            background-color: black;
+            background-image: url(/CSS/images/logoNavBar.svg);
+            background-position: left;
+            background-repeat: no-repeat;
+            border: solid black 1px;
+            border-radius: 0 0 10px 10px;
+        }
+       
+        .mainTop{
+
+            .firstMainContent{
+                flex-direction: column;
+                gap: 10rem;
+
+                .logoHeadingMobile{
+                    width: 910px;
+                    height: 356px;
+                }
+                .container1{
+                    width: auto;
+                    // background-color: #C54E4E;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                }
+            }
+        }
+
+        .mainContent{
+
+            background-color: var(--accentColor);
+
+
+            .singleStatsSection{
+            
+            .statHeading{
+             color: #0b050049;   
+            }
+            
+            .sortPlayerSection{
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                // background-color: #C54E4E;
+                h1{
+                    color: #0b050049;
+                }
+                .playerSortLabel {
+                    color: #0b050049;
+                }
+                .playerSort{
+                    width: 10%;
+                    border: solid var(--thirdColor) 1px;
+                }
+            }
+            .allPlayerInfo{
+                height: 400px;
+                background-color: #0b050049;
+                flex-direction: row;
+
+                transition: all 1s;
+                .playerSeparation{
+                    transform: rotate(-90deg);
+                    width: 300px;
+                }
+
+                .thePlayerAndTheStats{
+                    // background-color: purple;
+                    height: auto;
+                    .thePlayer{
+                        width: 210px;
+                        height: 210px;
+                        transition: all 0.8s;
+                        gap: 1rem;
+
+                        .playerName{
+                            font-size: 1.5rem;
+                        }
+                        .playerTeam{
+                            font-size: 1rem;
+                        }
+                    }
+                    .thePlayer:hover{
+                        transform: rotate(-20deg);
+                        transition: all 0.5s;
+                        background-image: url(/CSS/images/lebron-james-los-angeles-lakers.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        filter: drop-shadow(2px);
+
+                    }
+                    .thePlayerBackStrip{
+                        display: none;
+                    }
+
+                }
+            }
+            }
+
+            .allPlayerInfo:hover{
+            background-color: var(--secondaryColor);
+            transition: all 0.5s;
+            }
+            .playerMoreInfo{
+                width: 30%;
+                padding: 0 1rem;
+                border-top: solid #0b050049 1px;
+                border-bottom: solid #0b050049 1px;
+                border-radius: unset;
+                background-color: unset;
+            }
+            .playerMoreInfo:hover{
+                background-color: var(--secondaryColor);
+            }
+
+            .comparisonOfPlayers{
+                h1{
+                    color: #0b050049;
+                }
+                .comparison{
+                    background-color: #0b050049;
+                    transition: all 1s;
+                    flex-direction: row;
+
+                    hr{
+                        transform: rotate(-60deg);
+                        width: 10%;
+                    }
+                }
+                .comparison:hover{
+                    background-color: var(--secondaryColor);
+                    transition: all 0.5s;
+                }
+               .playerSeparation{
+                display: none;
+               }
+               .graphsContainer{
+                width: 95%;
+                height: 290px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                border-radius: 5px;
+                align-items: center;
+                background-color: #0B0500;
+                margin-top: 2rem;
+
+                .barChartOfPlayersStats{
+                    // background-color: #C54E4E;
+                    height: 267px;
+                    width: 500px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .lineGraphOfPlayerStats{
+                    margin-top: unset;
+                    // background-color: #C54E4E;
+                    height: 267px;
+                    width: 500px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+               }
+            }
+
+            .footer{
+                flex-direction: row;
+
+                .socialsContainer {
+                    height: 100px;
+                    width: 100px;
+                    border-top: unset;
+                    border-left: solid var(--accentColor) 1px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+
+
+                }
+
+            }
+
+
+        }
+
+
+
+
+
+    }
+}
