@@ -126,9 +126,11 @@ const minPlayed = document.getElementById('minPlayed');
                                 
                                 
                             });
-                            myChart;
+                        
+                          return  myChart;
+                        
     }
-    return chartIt();
+    chartIt();
                             } catch (error) {
                                 console.log("ooh,oh can't find new chart data")
                             }
